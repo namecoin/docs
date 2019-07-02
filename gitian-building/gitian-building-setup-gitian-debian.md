@@ -67,13 +67,13 @@ cd ..
 
 **Note**: When sudo asks for a password, enter the password for the user `gitianuser` not for `root`.
 
-Clone the git repositories for bitcoin and Gitian.
+Clone the git repositories for namecoin and Gitian.
 
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
-git clone https://github.com/bitcoin/bitcoin
-git clone https://github.com/bitcoin-core/gitian.sigs.git
-git clone https://github.com/bitcoin-core/bitcoin-detached-sigs.git
+git clone https://github.com/namecoin/namecoin-core
+git clone https://github.com/namecoin/gitian.sigs.git
+git clone https://github.com/namecoin/namecoin-detached-sigs.git
 ```
 
 Setting up the Gitian image
