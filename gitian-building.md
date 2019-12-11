@@ -75,7 +75,7 @@ You only need to do this once:
 ./gitian-build.py --setup JeremyRand 0.16.0rc1
 ```
 
-Where `JeremyRand` is your Github name and `0.16.0rc1` is the most recent tag (without `v`). 
+Where `JeremyRand` is your Github name and `0.16.0rc1` is the most recent tag (without `nc`). 
 
 In order to sign gitian builds on your host machine, which has your PGP key, fork the gitian.sigs repository and clone it on your host machine:
 
