@@ -70,7 +70,7 @@ In order to sign gitian builds on your host machine, which has your PGP key, for
 
 ```
 export NAME=JeremyRand
-git clone git@github.com:namecoin/gitian.sigs.git
+git clone git@github.com:$NAME/gitian.sigs.git
 git remote add $NAME git@github.com:$NAME/gitian.sigs.git
 ```
 
