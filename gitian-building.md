@@ -96,9 +96,9 @@ If all went well, this produces a number of (uncommited) `.assert` files in the 
 You need to copy these uncommited changes to your host machine, where you can sign them:
 
 ```
-gpg --output ${VERSION}-linux/${NAME}/namecoin-linux-${VERSION%\.*}-build.assert.sig --detach-sign ${VERSION}-linux/$NAME/namecoin-linux-${VERSION%\.*}-build.assert
-gpg --output ${VERSION}-osx-unsigned/$NAME/namecoin-osx-${VERSION%\.*}-build.assert.sig --detach-sign ${VERSION}-osx-unsigned/$NAME/namecoin-osx-${VERSION%\.*}-build.assert
-gpg --output ${VERSION}-win-unsigned/$NAME/namecoin-win-${VERSION%\.*}-build.assert.sig --detach-sign ${VERSION}-win-unsigned/$NAME/namecoin-win-${VERSION%\.*}-build.assert
+gpg --output ${VERSION}-linux/${NAME}/namecoin-core-linux-${VERSION%\.*}-build.assert.sig --detach-sign ${VERSION}-linux/$NAME/namecoin-core-linux-${VERSION%\.*}-build.assert
+gpg --output ${VERSION}-osx-unsigned/$NAME/namecoin-core-osx-${VERSION%\.*}-build.assert.sig --detach-sign ${VERSION}-osx-unsigned/$NAME/namecoin-core-osx-${VERSION%\.*}-build.assert
+gpg --output ${VERSION}-win-unsigned/$NAME/namecoin-core-win-${VERSION%\.*}-build.assert.sig --detach-sign ${VERSION}-win-unsigned/$NAME/namecoin-core-win-${VERSION%\.*}-build.assert
 ```
 
 Make a PR (both the `.assert` and `.assert.sig` files) to the
@@ -113,9 +113,9 @@ git push --set-upstream $NAME $VERSION-not-codesigned
 You can also mail the files to Jeremy (jeremyrand@airmail.cc) and he will commit them.
 
 ```bash
-    gpg --detach-sign ${VERSION}-linux/${NAME}/namecoin-linux-*-build.assert
-    gpg --detach-sign ${VERSION}-win-unsigned/${NAME}/namecoin-win-*-build.assert
-    gpg --detach-sign ${VERSION}-osx-unsigned/${NAME}/namecoin-osx-*-build.assert
+    gpg --detach-sign ${VERSION}-linux/${NAME}/namecoin-core-linux-*-build.assert
+    gpg --detach-sign ${VERSION}-win-unsigned/${NAME}/namecoin-core-win-*-build.assert
+    gpg --detach-sign ${VERSION}-osx-unsigned/${NAME}/namecoin-core-osx-*-build.assert
 ```
 
 You may have other .assert files as well (e.g. `signed` ones), in which case you should sign them too. You can see all of them by doing `ls ${VERSION}-*/${NAME}`.
