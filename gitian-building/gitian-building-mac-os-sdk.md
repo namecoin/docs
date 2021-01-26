@@ -23,7 +23,7 @@ Non-MacOS host:
 --------
 
 Alternatively, you can use 7zip and SleuthKit to extract the files one by one.
-The script [extract-osx-sdk.sh](https://github.com/namecoin/namecoin-core/blob/master/contrib/macdeploy/extract-osx-sdk.sh) automates this. First ensure
+The script [extract-osx-sdk.sh](https://github.com/namecoin/namecoin-core/blob/c05355ebca6b50ae53f9da81d0d5b7e939b16d53/contrib/macdeploy/extract-osx-sdk.sh) automates this. First ensure
 the dmg file is in the current directory, and then run the script.
 
 You may wish to delete the intermediate 5.hfs file and MacOSX10.11.sdk (the directory) when
