@@ -77,6 +77,7 @@ macOS code signing
 In order to sign builds for macOS, you need to download the free SDK and extract a file.
 The steps are described:
 - [here](https://github.com/namecoin/namecoin-core/blob/master/contrib/macdeploy/README.md#sdk-extraction) for `Xcode-11.3.1-11C505-extracted-SDK-with-libcxx-headers.tar.gz`
+- [here](https://github.com/namecoin/namecoin-core/blob/de280a19e4708b2232e316e4bc87bbc8e60a5892/contrib/macdeploy/README.md) for `MacOSX10.14.sdk.tar.gz`
 - [here](https://github.com/namecoin/namecoin-core-docs/blob/3afb4574366c8da31fded4b224051377bbd56a47/gitian-building/gitian-building-mac-os-sdk.md) for `MacOSX10.11.sdk.tar.gz`.
 
 Copy the extracted SDK file into the `gitian-builder/inputs` directory:
